@@ -27,6 +27,7 @@ namespace SearchingBooksDatabase
         {
             //connect books database
             string path = Path.GetFullPath("SQLBooksDB.mdf");
+            //MessageBox.Show(path); //Debuging to figure out where the filepath was
             booksConnection = new SqlConnection("Data Source=.\\SQLEXPRESS; AttachDbFilename=" + path + ";Integrated Security=True;Connect Timeout=30;User Instance=True");
             booksConnection.Open();
 
